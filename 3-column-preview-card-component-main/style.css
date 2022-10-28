@@ -1,0 +1,131 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h3 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.orange {
+    background-color: var(--bright-orange);
+    border-radius: 5px 5px 0 0;
+}
+
+.dark-cyan {
+    background-color: var(--dark-cyan);
+}
+
+.very-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    border-radius:0 0 5px 5px ;
+}
+
+.container {
+    padding: 20px;
+}
+
+.card {
+    padding: 30px;
+}
+
+p, .btn {
+    font-family: "Big Shoulders Display", sans-serif;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.orange .btn {
+    color: var(--bright-orange);
+    ;
+}
+
+.dark-cyan .btn {
+    color: var(--dark-cyan);
+}
+
+.very-dark-cyan .btn {
+    color: var(--very-dark-cyan);
+}
+
+.card img {
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: rgb(211, 211, 211);
+    font-size: 14px;
+}
+
+.orange .btn:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.dark-cyan .btn:hover {
+    background-color: transparent;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.very-dark-cyan .btn:hover {
+    color: #fff;
+    transition: ease-in-out 0.3s;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+    .orange {
+        border-radius: 7px 0 0px 7px;
+    }
+    .very-dark-cyan {
+        border-radius: 0 7px 7px 0;
+    }
+    img {
+        padding-bottom: 15px;
+    }
+    h3 {
+        padding-bottom: 10px;
+    }
+    .btn {
+        margin-bottom: 20px;
+        padding: 13px 30px;
+    }
+
+    p {
+        padding-bottom: 40px;
+    }
+}
